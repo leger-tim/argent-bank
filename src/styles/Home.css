@@ -1,0 +1,13 @@
+.features {
+  display: flex;
+  margin-top: 220px;
+}
+@media (max-width: 920px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 145px;
+  }
+}

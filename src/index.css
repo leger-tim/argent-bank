@@ -1,13 +1,35 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+/* Assurez-vous que html et body occupent 100% de la hauteur de la fenêtre */
+html,
+body {
+  height: 100%;
+  margin: 0; /* Supprimer les marges par défaut */
+}
+
+/* Appliquez 100% de hauteur à l'élément racine de votre application */
+#root {
+  height: 100%;
+}
+
+/* Optionnel: Style de votre conteneur principal dans l'application */
+.App {
+  min-height: 100%; /* S'assurer que le conteneur principal occupe toute la hauteur */
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
 }

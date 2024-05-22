@@ -1,0 +1,46 @@
+.sign-container {
+  background-color: #12002b;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 360px;
+  background-color: white;
+  margin-top: 40px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-style:focus {
+  border-color: orange;
+  outline: none;
+  border-radius: 5px;
+}
+.input-style {
+  height: 30px;
+  width: 230px;
+}
+
+.sign-in-button {
+  width: 240px;
+  height: 35px;
+  background-color: #00bc77;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 10px;
+}

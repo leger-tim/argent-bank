@@ -1,0 +1,26 @@
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.main-nav-logo-image {
+  width: 198px;
+  height: 54px;
+  margin-left: 20px;
+}
+
+.nav-user-icon {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.main-nav-item {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 25px;
+}
