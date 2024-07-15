@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/UserHeader.css";
 
 const UserHeader = ({ userName }) => {
   return (
@@ -8,7 +9,6 @@ const UserHeader = ({ userName }) => {
         <br />
         {userName}!
       </h1>
-      <button className="edit-button">Edit Name</button>
     </div>
   );
 };

@@ -17,19 +17,3 @@ body {
   height: 100%;
   margin: 0; /* Supprimer les marges par défaut */
 }
-
-/* Appliquez 100% de hauteur à l'élément racine de votre application */
-#root {
-  height: 100%;
-}
-
-/* Optionnel: Style de votre conteneur principal dans l'application */
-.App {
-  min-height: 100%; /* S'assurer que le conteneur principal occupe toute la hauteur */
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
-  height: 100%;
-}
