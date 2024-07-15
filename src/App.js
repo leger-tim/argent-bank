@@ -1,30 +1,3 @@
-// import React from "react";
-// import { Routes, Route } from "react-router-dom";
-// import Header from "./components/Header";
-// import Footer from "./components/Footer";
-// import Home from "./components/Home";
-// import SignInForm from "./components/SignInForm";
-// import User from "./components/User";
-// import "./App.css";
-
-// const App = () => {
-//   return (
-//     <>
-//       <Header isUserLoggedIn={false} userName="Tony" />
-//       <main className="main">
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/sign-in" element={<SignInForm />} />
-//           <Route path="/user" element={<User />} />
-//         </Routes>
-//       </main>
-//       <Footer />
-//     </>
-//   );
-// };
-
-// export default App;
-
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
