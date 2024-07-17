@@ -46,6 +46,12 @@ const User = () => {
     setIsEditing(false);
   };
 
+  const handleCancelClick = () => {
+    setFirstName(auth.user.firstName);
+    setLastName(auth.user.lastName);
+    setIsEditing(false);
+    setError("");
+  };
   if (!auth.isAuthenticated) {
     return <p>You need to login to view this page.</p>;
   }
@@ -73,6 +79,9 @@ const User = () => {
           />
           <button onClick={handleSaveClick} className="save-button">
             Save
+          </button>
+          <button onClick={handleCancelClick} className="save-button">
+            Cancel
           </button>
           {error && <p className="error">{error}</p>}
         </div>

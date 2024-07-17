@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import logo from "../img/argentBankLogo.png";
 import "../styles/Header.css";
 import userIcon from "../img/user-circle-svgrepo-com.png"; // Renommé pour éviter la confusion avec 'user'
+import signOut from "../img/sign-out-option.png";
 
 const Header = ({ isUserLoggedIn, userName }) => {
   const dispatch = useDispatch();
@@ -28,11 +29,15 @@ const Header = ({ isUserLoggedIn, userName }) => {
         {isUserLoggedIn ? (
           <>
             <Link className="main-nav-item" to="/user">
-              <i className="fa fa-user-circle"></i>
+              <img
+                className="nav-user-icon"
+                src={userIcon}
+                alt="Sign in icon"
+              />
               {userName}
             </Link>
             <button className="main-nav-item" onClick={handleLogout}>
-              <i className="fa fa-sign-out"></i>
+              <img className="sign-out" src={signOut} alt="Sign out icon" />
               Sign Out
             </button>
           </>

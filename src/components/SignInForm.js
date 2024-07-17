@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login } from "../actions/authActions";
 import { useNavigate } from "react-router-dom";
 import "../styles/SignIn.css";
+import userIcon from "../img/user-circle-svgrepo-com.png"; // Renommé pour éviter la confusion avec 'user'
 
 const SignInForm = () => {
   const [email, setEmail] = useState("");
@@ -25,11 +26,11 @@ const SignInForm = () => {
   return (
     <div className="sign-container">
       <section className="sign-in-content">
-        <i className="fa fa-user-circle sign-in-icon"></i>
+        <img className="nav-user-icon" src={userIcon} alt="Sign in icon" />
         <h1>Sign In</h1>
         <form onSubmit={handleSubmit}>
           <div className="input-wrapper">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Username</label>
             <input
               type="email"
               id="email"
