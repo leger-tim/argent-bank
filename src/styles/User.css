@@ -6,6 +6,13 @@
   background-color: #12002b;
 }
 
+.name-edit {
+  height: 30px;
+}
+.save-cancel-buttons {
+  display: flex;
+  justify-content: space-between;
+}
 @media only screen and (max-width: 700px) {
   .accounts {
     display: flex;
@@ -31,14 +38,25 @@
     width: 70px;
     margin-bottom: 30px;
   }
+
+  .save-cancel-buttons {
+    width: 100%;
+  }
+
+  .div-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 700px) {
   .edit-name-form {
     display: flex;
-    flex-direction: row;
-    height: 40px;
+    flex-direction: column;
+    height: 80px;
     margin-bottom: 50px;
+    align-items: center;
   }
 
   .name-edit {
@@ -48,6 +66,14 @@
   .save-button {
     margin-right: 20px;
     width: 70px;
+  }
+
+  .div-input {
+    margin-bottom: 20px;
+  }
+
+  .save-cancel-buttons {
+    width: 46%;
   }
 }
 

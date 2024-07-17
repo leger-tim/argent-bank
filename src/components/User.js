@@ -61,28 +61,32 @@ const User = () => {
       <UserHeader userName={auth.user?.firstName + " " + auth.user?.lastName} />
       {isEditing ? (
         <div className="edit-name-form">
-          <input
-            className="name-edit"
-            type="text"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            placeholder="First Name"
-            maxLength="10"
-          />
-          <input
-            className="name-edit"
-            type="text"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            placeholder="Last Name"
-            maxLength="10"
-          />
-          <button onClick={handleSaveClick} className="save-button">
-            Save
-          </button>
-          <button onClick={handleCancelClick} className="save-button">
-            Cancel
-          </button>
+          <div className="div-input">
+            <input
+              className="name-edit"
+              type="text"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              placeholder="First Name"
+              maxLength="10"
+            />
+            <input
+              className="name-edit"
+              type="text"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              placeholder="Last Name"
+              maxLength="10"
+            />
+          </div>
+          <div className="save-cancel-buttons">
+            <button onClick={handleSaveClick} className="save-button">
+              Save
+            </button>
+            <button onClick={handleCancelClick} className="save-button">
+              Cancel
+            </button>
+          </div>
           {error && <p className="error">{error}</p>}
         </div>
       ) : (
